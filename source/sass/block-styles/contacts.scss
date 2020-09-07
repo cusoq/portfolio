@@ -1,0 +1,96 @@
+.contacts {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  width: 320px;
+  min-height: 320px;
+  margin: 0 auto;
+
+  @media (min-width: $breakpoint-tablet) {
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: auto;
+    min-height: 240px;
+  }
+
+  @media (min-width: $breakpoint-desktop) {
+    background-color: $secondary-color;
+  }
+}
+
+
+.contacts__action-wrapper {
+  padding: 20px;
+  margin: 0;
+  height: 32px;
+  box-shadow: inset 0 -1px 0 0  $secondary-color--darken-translucent;
+
+  @media (min-width: $breakpoint-desktop) {
+    min-width: 35%;
+  }
+}
+
+.contacts__action-wrapper span {
+  font-weight: 300;
+  color: white;
+  opacity: 0.6;
+
+  @media (min-width: $breakpoint-desktop) {
+    color: $secondary-color--darken;
+  }
+}
+
+.contacts__action-link {
+  font-size: $font-size--huge;
+  font-weight: 300;
+  text-align: center;
+  line-height: 1.2;
+  color: rgba(210, 40, 86, 1);
+
+  &:hover,
+  &:focus {
+    color: rgba(210, 40, 86, 0.6);
+  }
+
+  &:active {
+    color: white;
+    opacity: 0.3;
+
+    @media (min-width: $breakpoint-desktop) {
+      color: black;
+    }
+  }
+}
+
+.contacts__who-am-i {
+  color: white;
+  text-align: center;
+  margin: 15px auto;
+
+  @media (min-width: $breakpoint-desktop) {
+    color: $secondary-color--darken;
+  }
+}
+
+.contacts__profession {
+  margin: 0;
+  font-size: $font-size--huge;
+  font-weight: 300;
+  line-height: 2;
+}
+
+.contacts__photo {
+  width: 120px;
+  height: 120px;
+  border: 6px solid white;
+  margin: auto auto -20% auto;
+  border-radius: 50%;
+  background-color: coral;
+  overflow: hidden;
+
+  @media (min-width: $breakpoint-tablet) {
+    color: $secondary-color--darken;
+    margin: -1% auto auto auto;
+  }
+}

@@ -1,0 +1,73 @@
+.my-works {
+  overflow: hidden;
+  background-color: $secondary-color--fogged;
+}
+
+.my-works__caption {
+  text-align: center;
+  color: $secondary-color--darken;
+}
+
+.my-works__photo-list {
+  width: 280px;
+  margin: 0 20px;
+
+  @media (min-width: $breakpoint-tablet) {
+    display: flex;
+    flex-wrap: wrap;
+    width: 640px;
+    margin: 0 -30px 0 20px;
+  }
+
+  @media (min-width: $breakpoint-desktop) {
+    width: 980px;
+    margin: 0 -170px 0 130px;
+  }
+  // Отрицательный внешний отступ добавлен для корректного
+  // переноса карточек в многострочном флекс-контейнере
+}
+
+.my-works__photo-item {
+  min-height: 180px;
+  margin-bottom: 20px;
+  background-color: $form-border-color;
+
+  @media (min-width: $breakpoint-tablet) {
+    flex-basis: 300px;
+    margin: 0 20px 35px 0;
+    min-height: 180px;
+
+    &--wide-tablet {
+      flex-basis: 620px;
+      min-height: 420px;
+    }
+  }
+
+  @media (min-width: $breakpoint-desktop) {
+    margin: 0 20px 50px 0;
+
+    &--wide-tablet {
+      flex-basis: 300px;
+      min-height: 180px;
+    }
+
+    &--wide-desktop {
+      flex-basis: 460px;
+      min-height: 180px;
+    }
+  }
+}
+
+.my-works-list__pic {
+  margin: 0;
+}
+
+.my-works__pic {
+  width: 100%;
+  height: auto;
+  margin: 0;
+}
+
+.my-works-list__pic-caption {
+  padding: 7px;
+}

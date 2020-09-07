@@ -1,0 +1,28 @@
+// размеры шрифта
+$font-size--small: 12px;
+$font-size: 14px;
+$font-size--large: 18px;
+$font-size--big: 20px;
+$font-size--huge: 24px;
+$font-size--giant: 30px;
+$font-size--vast: 40px;
+$font-size--enormous: 50px;
+
+// цвета
+$primary-color: #000000;
+$secondary-color: #ffffff;
+$secondary-color--fogged: #f2f2f2;
+$secondary-color--darken-translucent: rgba(1, 1, 1, 0.6);
+$secondary-color--darken: rgba(40, 54, 69, 1);
+$main-color: #d22856;
+$button-color: #2aab6d;
+$form-border-color: #e5e5e5;
+$menu-shadow-color: rgba(255, 255, 255, 0.15);
+
+// брейкпойнты
+$breakpoint-tablet: 660px;
+$breakpoint-desktop: 1000px;
+
+// ретиновость
+$retina-dpi: 144dpi;
+$retina-dppx: 1.5dppx;
